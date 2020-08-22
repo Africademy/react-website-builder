@@ -1,0 +1,21 @@
+.section-btn{
+    cursor:default !important;
+
+    color: #000 !important; 
+    background-color: white !important; 
+    border-color: white !important;
+    border-bottom-color: black !important;
+    box-shadow: none!important;
+    outline: 0;
+}
+
+.component-btn{
+    cursor:default !important;
+
+    color: #000 !important; 
+    background-color: white !important; 
+    border-color: white !important;
+    border-bottom-color: black !important;
+    box-shadow: none!important;
+    outline: 0;
+}

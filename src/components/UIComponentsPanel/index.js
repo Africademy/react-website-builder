@@ -1,18 +1,21 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container';
 import UIComponentSection from './UIComponentSection'
 
-class UIComponentsPanel extends React.Component{
-    render(){
+class UIComponentsPanel extends React.Component {
+    render() {
         const sections = [];
-        Object.keys(this.props.sections).forEach(([name,values]) => {
-            sections.push(<UIComponentSection name={name} values={values}></UIComponentSection>)
-        });
+        const iter = this.props.sections;
+        for (const key in iter) {
+            if (iter.hasOwnProperty(key)) {
+                console.log(key,iter[key])
+                sections.push(<UIComponentSection name={iter[key].name} values={iter[key].values}></UIComponentSection>)
+            }
+        }
 
         return (
-            <Container className="panel">
+            <>
                 {sections}
-            </Container>
+            </>
         )
     }
 }

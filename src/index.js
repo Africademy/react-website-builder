@@ -1,9 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import UIComponentsPanel from './components/UIComponentsPanel';
+import App from './components/App';
+//import UIComponentsPanel from './components/UIComponentsPanel';
 
 const vals = {
     section1 : {
+        name : "Comps",
+        values : [
+            "A",
+            "B",
+            "C",
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    section2 : {
         name : "Comps",
         values : [
             "A",
@@ -12,4 +24,4 @@ const vals = {
     }
 }
 
-ReactDOM.render(<UIComponentsPanel sections={vals} />, document.getElementById("root"));
+ReactDOM.render(<App sections={vals} />, document.getElementById("root"));
