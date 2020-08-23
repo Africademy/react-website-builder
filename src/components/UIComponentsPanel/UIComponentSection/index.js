@@ -21,8 +21,8 @@ class UIComponentSection extends React.Component {
         for (var i = 0; i < len/3; i++) {
             const row = []
             for(var j=i*3,k=0;j<len && k<3;j++,k++)
-                row.push(<ComponentButton name={this.props.values[j]}></ComponentButton>);
-            rows.push(<ReactBootstrap.Row className = "justify-content-center">{row}</ReactBootstrap.Row>);
+                row.push(<ComponentButton key={j} name={this.props.values[j]}></ComponentButton>);
+            rows.push(<ReactBootstrap.Row key={i} className = "justify-content-center">{row}</ReactBootstrap.Row>);
         }
         
         return (

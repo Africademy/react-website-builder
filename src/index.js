@@ -12,11 +12,12 @@ const vals = {
             "C",
             "A",
             "B",
-            "C"
+            "C",
+            "E"
         ]
     },
     section2 : {
-        name : "Comps",
+        name : "Others",
         values : [
             "A",
             "B"
@@ -24,4 +25,11 @@ const vals = {
     }
 }
 
-ReactDOM.render(<App sections={vals} />, document.getElementById("root"));
+const names = [
+    { name: "first_prop" },
+    { name: "second_prop" },
+    { name: "third_prop" },
+    { name: "fourth_prop" }
+  ];
+
+ReactDOM.render(<App sections={vals} names={names} />, document.getElementById("root"));

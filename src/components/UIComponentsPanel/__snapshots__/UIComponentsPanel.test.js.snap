@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`show/hide components when section is clicked 1`] = `
+Array [
+  <div
+    className="section"
+  >
+    <button
+      aria-controls="Comps"
+      aria-expanded={true}
+      className="section-btn btn btn-primary btn-block"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Comps
+    </button>
+    <div
+      aria-expanded={null}
+      className="collapse show container"
+      id="Comps"
+    >
+      <div
+        className="justify-content-center row"
+      >
+        <button
+          className="m-2 btn btn-outline-success"
+          disabled={false}
+          type="button"
+        >
+          A
+        </button>
+        <button
+          className="m-2 btn btn-outline-success"
+          disabled={false}
+          type="button"
+        >
+          B
+        </button>
+        <button
+          className="m-2 btn btn-outline-success"
+          disabled={false}
+          type="button"
+        >
+          C
+        </button>
+      </div>
+      <div
+        className="justify-content-center row"
+      >
+        <button
+          className="m-2 btn btn-outline-success"
+          disabled={false}
+          type="button"
+        >
+          A
+        </button>
+        <button
+          className="m-2 btn btn-outline-success"
+          disabled={false}
+          type="button"
+        >
+          B
+        </button>
+        <button
+          className="m-2 btn btn-outline-success"
+          disabled={false}
+          type="button"
+        >
+          C
+        </button>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="section"
+  >
+    <button
+      aria-controls="Others"
+      aria-expanded={true}
+      className="section-btn btn btn-primary btn-block"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Others
+    </button>
+    <div
+      aria-expanded={null}
+      className="collapse show container"
+      id="Others"
+    >
+      <div
+        className="justify-content-center row"
+      >
+        <button
+          className="m-2 btn btn-outline-success"
+          disabled={false}
+          type="button"
+        >
+          A
+        </button>
+        <button
+          className="m-2 btn btn-outline-success"
+          disabled={false}
+          type="button"
+        >
+          B
+        </button>
+      </div>
+    </div>
+  </div>,
+]
+`;
