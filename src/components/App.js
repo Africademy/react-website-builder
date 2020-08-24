@@ -12,27 +12,35 @@ import WebPreviewArea from './WebPreviewArea'
 */
 class App extends React.Component {
     render() {
-        var x = (
-            <Container fluid>
-                <Row className="m-2">
-                    <Logo title="React" />
-                </Row>
-                <Row className="m-2">
-                    <Toolbar names={this.props.names} />
-                </Row>
-                <Row>
-                    <Col md="2">
-                        <UIComponentsPanel sections={this.props.sections}></UIComponentsPanel>
-                    </Col>
-                    <Col md="7" >
-                        <WebPreviewArea />
-                    </Col>
-                    <Col md="3">
-                        
-                    </Col>
-                </Row>
-            </Container>
-        )
+        var x =
+
+            (
+                <Container fluid>
+                    <div class="row min-vh-100">
+                        <div class="col-12">
+                            <div class="d-flex flex-column h-100">
+                                <Row className="m-2">
+                                    <Logo title="React" />
+                                </Row>
+                                <Row className="m-2">
+                                    <Toolbar names={this.props.names} />
+                                </Row>
+                                <Row className="d-flex flex-grow-1">
+                                    <Col md="2">
+                                        <UIComponentsPanel sections={this.props.sections}></UIComponentsPanel>
+                                    </Col>
+                                    <Col md="7" >
+                                        <WebPreviewArea style={{backgroundColor:'red'}}/>
+                                    </Col>
+                                    <Col md="3">
+
+                                    </Col>
+                                </Row>
+                            </div>
+                        </div>
+                    </div>
+                </Container>
+            )
         return x;
 
     }
