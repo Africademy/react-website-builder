@@ -30,7 +30,7 @@ class App extends React.Component {
                                         <UIComponentsPanel sections={this.props.sections}></UIComponentsPanel>
                                     </Col>
                                     <Col md="7" >
-                                        <WebPreviewArea style={{backgroundColor:'red'}}/>
+                                        <WebPreviewArea />
                                     </Col>
                                     <Col md="3">
 
