@@ -6,11 +6,11 @@ import Col from "react-bootstrap/Col";
 
 function Toolbar(props) {
   const columns = [];
-  const task = props.names;
+  const task = props.tools;
   for (var i = 0; i < task.length; i++) {
     columns.push(
-      <Col className="btnProp" key={task[i].name.toString()}>
-        {task[i].name}
+      <Col className="btnProp" key={task[i]}>
+        {task[i]}
       </Col>
     );
   }

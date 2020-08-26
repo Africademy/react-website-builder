@@ -10,20 +10,21 @@ import WebPreviewArea from './WebPreviewArea'
          RightHandlerPanel 
          Drag & Drop api walkthrough
 */
+
 class App extends React.Component {
     render() {
         var x =
 
             (
                 <Container fluid>
-                    <div class="row min-vh-100">
-                        <div class="col-12">
-                            <div class="d-flex flex-column h-100">
+                    <div className="row min-vh-100">
+                        <div className="col-12">
+                            <div className="d-flex flex-column h-100">
                                 <Row className="m-2">
                                     <Logo title="React" />
                                 </Row>
                                 <Row className="m-2">
-                                    <Toolbar names={this.props.names} />
+                                    <Toolbar tools={this.props.tools} />
                                 </Row>
                                 <Row className="d-flex flex-grow-1">
                                     <Col md="2">

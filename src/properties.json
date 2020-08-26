@@ -1,0 +1,21 @@
+{
+    "sections": {
+        "Elements":{
+            "div" :{},
+            "button" : {
+                "className" : "btn btn-primary"
+            },
+            "p" : {}
+        },
+        "Components":{
+            "nav" : {},
+            "caraousel" : {}
+        }
+    },
+    "tools":[
+        "tool_1",
+        "tool_2",
+        "tool_3",
+        "tool_4"
+    ]
+}

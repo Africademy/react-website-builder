@@ -11,7 +11,7 @@ class ComponentButton extends React.Component{
     dragstart_handler(e){
         console.log("dragged")
         e.dataTransfer.setData("text/plain", e.target.id);
-        var j = JSON.stringify({name: "button", val: this.props.name})
+        var j = JSON.stringify({name: this.props.name, attr: this.props.attr})
         e.dataTransfer.setData("text/html", j);
     }
 
