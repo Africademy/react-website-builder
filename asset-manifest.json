@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-website-builder/static/css/main.456c9c69.chunk.css",
+    "main.js": "/react-website-builder/static/js/main.a34452db.chunk.js",
+    "main.js.map": "/react-website-builder/static/js/main.a34452db.chunk.js.map",
+    "runtime-main.js": "/react-website-builder/static/js/runtime-main.0c5d46cc.js",
+    "runtime-main.js.map": "/react-website-builder/static/js/runtime-main.0c5d46cc.js.map",
+    "static/css/2.f3cffc9e.chunk.css": "/react-website-builder/static/css/2.f3cffc9e.chunk.css",
+    "static/js/2.34747676.chunk.js": "/react-website-builder/static/js/2.34747676.chunk.js",
+    "static/js/2.34747676.chunk.js.map": "/react-website-builder/static/js/2.34747676.chunk.js.map",
+    "index.html": "/react-website-builder/index.html",
+    "precache-manifest.90a378b9cfd14fac181c94aa26b418ef.js": "/react-website-builder/precache-manifest.90a378b9cfd14fac181c94aa26b418ef.js",
+    "service-worker.js": "/react-website-builder/service-worker.js",
+    "static/css/2.f3cffc9e.chunk.css.map": "/react-website-builder/static/css/2.f3cffc9e.chunk.css.map",
+    "static/css/main.456c9c69.chunk.css.map": "/react-website-builder/static/css/main.456c9c69.chunk.css.map",
+    "static/js/2.34747676.chunk.js.LICENSE.txt": "/react-website-builder/static/js/2.34747676.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0c5d46cc.js",
+    "static/css/2.f3cffc9e.chunk.css",
+    "static/js/2.34747676.chunk.js",
+    "static/css/main.456c9c69.chunk.css",
+    "static/js/main.a34452db.chunk.js"
+  ]
+}
