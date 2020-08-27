@@ -1,21 +1,34 @@
 {
-    "sections": {
-        "Elements":{
-            "div" :{ },
-            "button" : {
-                "className" : "btn btn-primary"
-            },
-            "p" : {}
-        },
-        "Components":{
-            "nav" : {},
-            "caraousel" : {}
-        }
+  "sections": {
+    "elements": {
+      "button": {
+        "icon": "url",
+        "tag": "button",
+        "className": "btn btn-primary",
+        "content": "Button"
+      },
+      "paragraph": {
+        "icon": "url",
+        "tag": "p",
+        "content": "this is a text"
+      },
+      "heading": {
+        "icon": "url",
+        "tag": "h1",
+        "content": "this is a heading"
+      },
+      "input": {
+        "icon": "url",
+        "tag": "input",
+        "className": "form-control",
+        "placeholder": "enter text"
+      }
     },
-    "tools":[
-        "tool_1",
-        "tool_2",
-        "tool_3",
-        "tool_4"
-    ]
+    "components": {
+      "nav": {},
+      "caraousel": {},
+      "list": {}
+    }
+  },
+  "tools": ["tool_1", "tool_2", "tool_3", "tool_4"]
 }
