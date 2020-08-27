@@ -1,14 +1,11 @@
-
 {
-    "div":{
-        
+  "button": {
+    "colors": {
+      "class": ["btn-primary", "btn-secondary", "btn-danger", "btn-dark"]
     },
-    "button":{
-        "class": [
-            "btn","btn-primary","btn-secondary"
-        ]
-    },
-    "p":{
 
-    }
+    "sizes": { "class": ["btn-sm", "btn-lg", "btn-block", "__default"] },
+    "disabled": { "attr": ["true", "false"] }
+  },
+  "p": {}
 }
