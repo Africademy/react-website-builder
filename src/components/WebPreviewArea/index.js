@@ -40,7 +40,7 @@ class WebPreviewArea extends React.Component {
             className="dragArea"
             onDrop={this.drop_handler}
             onDragOver={this.dragover_handler}>
-            <div id="addContent">{this.state.data}</div>
+            {this.state.data}
         </div>
         )
         )
