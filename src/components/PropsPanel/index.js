@@ -9,6 +9,8 @@ class PropsPanel extends React.Component {
   }
   render() {
     var tag = this.props.attr.tag;
+    var id = this.props.attr.id;
+    console.log(id)
     //const row= [];
     let ele = DisplayProp[tag];
     var load = [];
@@ -21,7 +23,7 @@ class PropsPanel extends React.Component {
         let iterate = ele[get][inner];
         for (var index in iterate) {
           if (def !== "undefined" && iterate[index] === def) {
-            options.push(<option>{iterate[index]}</option>);
+            options.push(<option key={index}>{iterate[index]}</option>);
           } else {
             options.push(<option>{iterate[index]}</option>);
           }
@@ -29,7 +31,7 @@ class PropsPanel extends React.Component {
       }
 
       load.push(
-        <Form.Group controlId="exampleForm.SelectCustomSizeSm">
+        <Form.Group controlId={id}>
           <Form.Label>{get}</Form.Label>
           <Form.Control as="select" size="sm" defaultValue={def} custom>
             {options}

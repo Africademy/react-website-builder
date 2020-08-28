@@ -6,7 +6,7 @@ import Logo from "./Logo";
 import Toolbar from "./ToolBar";
 import WebPreviewArea from "./WebPreviewArea";
 import PropsPanel from "./PropsPanel";
-
+import './App.css'
 /* TODO: WebPreviewArea- grid fix
          RightHandlerPanel 
          Drag & Drop api walkthrough
@@ -38,12 +38,12 @@ class App extends React.Component {
                 <Toolbar tools={this.props.tools} />
               </Row>
               <Row className="d-flex flex-grow-1">
-                <Col md="2">
+                <Col md="2" className="comp-panel">
                   <UIComponentsPanel
                     sections={this.props.sections}
                   ></UIComponentsPanel>
                 </Col>
-                <Col md="7">
+                <Col md="7" className="web-prev-area">
                   <WebPreviewArea handleClick={this.handle_props_panel} />
                 </Col>
                 <Col md="3">

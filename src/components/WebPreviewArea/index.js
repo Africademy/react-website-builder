@@ -12,6 +12,8 @@ class WebPreviewArea extends React.Component {
     this.drop_handler = this.drop_handler.bind(this);
     this.on_click = this.on_click.bind(this);
     this.drag_start = this.drag_start.bind(this);
+
+    this.key = 0;
   }
 
   on_click(e, data) {
@@ -42,7 +44,7 @@ class WebPreviewArea extends React.Component {
     data = JSON.parse(data);
     var ele = React.createElement(
       data.tag,
-      { ...data, onClick: this.on_click, onDragStart: this.drag_start },
+      { ...data, onClick: this.on_click, onDragStart: this.drag_start, id:this.key,key: this.key++ },
       data.content
     );
     this.setState((state, props) => ({
