@@ -4,7 +4,10 @@
       "button": {
         "icon": "url",
         "tag": "button",
-        "className": "btn btn-primary",
+
+        "className": "btn btn-secondary",
+        "colors": "btn-secondary",
+
         "content": "Button"
       },
       "paragraph": {

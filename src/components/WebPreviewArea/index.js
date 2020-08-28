@@ -15,8 +15,17 @@ class WebPreviewArea extends React.Component {
   }
 
   on_click(e, data) {
-    this.props.handleClick(e.target.outerHTML);
-    console.log(e.target.outerHTML);
+    /*extracting the required attributes from DOM attributes
+     and storing it in object and throwing it in callback(). */
+    var attrObj = {};
+    for (var j in e.target.attributes) {
+      if (e.target.attributes.hasOwnProperty(j)) {
+        var key = e.target.attributes[j].nodeName;
+        var value = e.target.attributes[j].nodeValue;
+        attrObj[key] = value;
+      }
+    }
+    this.props.handleClick(attrObj);
   }
 
   componentDidMount() {

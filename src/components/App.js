@@ -22,9 +22,7 @@ class App extends React.Component {
   }
 
   handle_props_panel(input) {
-    this.setState((state) => {
-      Object.assign(state.attr, input);
-    });
+    this.setState({ attr: input });
   }
 
   render() {
