@@ -27,6 +27,7 @@ class WebPreviewArea extends React.Component {
         attrObj[key] = value;
       }
     }
+    console.log(attrObj);
     this.props.handleClick(attrObj);
   }
 
@@ -44,7 +45,13 @@ class WebPreviewArea extends React.Component {
     data = JSON.parse(data);
     var ele = React.createElement(
       data.tag,
-      { ...data, onClick: this.on_click, onDragStart: this.drag_start, id:this.key,key: this.key++ },
+      {
+        ...data,
+        onClick: this.on_click,
+        onDragStart: this.drag_start,
+        id: this.key,
+        key: this.key++
+      },
       data.content
     );
     this.setState((state, props) => ({

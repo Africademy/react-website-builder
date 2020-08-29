@@ -24,7 +24,8 @@
         "icon": "url",
         "tag": "input",
         "className": "form-control",
-        "placeholder": "enter text"
+        "placeholder": "enter text",
+        "size": "sm"
       }
     },
     "components": {

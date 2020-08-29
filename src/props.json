@@ -7,5 +7,28 @@
     "sizes": { "class": ["btn-sm", "btn-lg", "btn-block", "__default"] },
     "disabled": { "attr": ["true", "false"] }
   },
-  "p": {}
+  "p": {
+    "text": {
+      "attr": ["this is a text"]
+    }
+  },
+  "input": {
+    "form-element": {
+      "class": ["form-control"]
+    },
+    "placeholder": {
+      "attr": ["enter-text"]
+    },
+    "sizes": {
+      "class": ["sm", "lg"]
+    }
+  },
+  "h1": {
+    "sizes": {
+      "class": ["h1", "h2", "h3", "h2"]
+    },
+    "text": {
+      "attr": ["this is a heading"]
+    }
+  }
 }

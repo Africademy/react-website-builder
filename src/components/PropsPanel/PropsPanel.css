@@ -1,0 +1,6 @@
+.PropsPanel p {
+  text-align: center;
+  color: #000 !important;
+  padding: 5px;
+  border-bottom: 1px solid;
+}

@@ -10,13 +10,17 @@ class PropsPanel extends React.Component {
   render() {
     var tag = this.props.attr.tag;
     var id = this.props.attr.id;
-    console.log(id)
+    console.log("current element tag is " + tag);
+    console.log("current element id is " + id);
+
     //const row= [];
     let ele = DisplayProp[tag];
+    console.log("current element is " + JSON.stringify(ele));
     var load = [];
     for (var get in ele) {
       const options = [];
       let def = this.props.attr[get];
+      console.log("default element is " + def);
 
       // console.log(def)
       for (var inner in ele[get]) {
@@ -27,6 +31,7 @@ class PropsPanel extends React.Component {
           } else {
             options.push(<option>{iterate[index]}</option>);
           }
+          console.log("these are values : " + iterate[index].toString());
         }
       }
 
@@ -39,7 +44,12 @@ class PropsPanel extends React.Component {
         </Form.Group>
       );
     }
-    return <>{load}</>;
+    return (
+      <div class="PropsPanel">
+        <p>Properties</p>
+        {load}
+      </div>
+    );
   }
 }
 
