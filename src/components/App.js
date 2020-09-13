@@ -6,7 +6,7 @@ import Logo from "./Logo";
 import Toolbar from "./ToolBar";
 import WebPreviewArea from "./WebPreviewArea";
 import PropsPanel from "./PropsPanel";
-import './App.css'
+import "./App.css";
 /* TODO: WebPreviewArea- grid fix
          RightHandlerPanel 
          Drag & Drop api walkthrough
@@ -19,10 +19,16 @@ class App extends React.Component {
       attr: {}
     };
     this.handle_props_panel = this.handle_props_panel.bind(this);
+    this.handle_webArea = this.handle_webArea.bind(this);
+    this.elems = [];
   }
 
   handle_props_panel(input) {
     this.setState({ attr: input });
+  }
+  handle_webArea(input) {
+    this.setState({ attr: input });
+    console.log("the recorded elements are " + this.elems);
   }
 
   render() {
@@ -44,7 +50,11 @@ class App extends React.Component {
                   ></UIComponentsPanel>
                 </Col>
                 <Col md="7" className="web-prev-area">
-                  <WebPreviewArea handleClick={this.handle_props_panel} />
+                  <WebPreviewArea
+                    handleClick={this.handle_props_panel}
+                    change={this.handle_webArea}
+                    elems={this.state.attr}
+                  />
                 </Col>
                 <Col md="3">
                   <PropsPanel attr={this.state.attr} />
