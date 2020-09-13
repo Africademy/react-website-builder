@@ -1,20 +1,20 @@
 import React from "react";
 import "./WebPreviewArea.css";
 
-// TODO: copulate the data in on_click()
-//try to parse and get data from handleClick() callback ()
-// in propsPanel Component.
+//web-preview area for display of all state elements.
 class WebPreviewArea extends React.Component {
   constructor(props) {
     super(props);
+    //bindings of drag,drop and onclick events.
     this.dragover_handler = this.dragover_handler.bind(this);
     this.drop_handler = this.drop_handler.bind(this);
     this.on_click = this.on_click.bind(this);
     this.drag_start = this.drag_start.bind(this);
-    this.fetch = this.fetch.bind(this);
 
-    this.key = 0;
+    //elements array for rendering all elements from state for
+    //dispaying them on preview-area.
     this.elems = [];
+    //giving keys to the elements. that are stored in state.
     this.state_key = 0;
   }
 
@@ -30,11 +30,13 @@ class WebPreviewArea extends React.Component {
       }
     }
     console.log(attrObj);
-    this.props.handleClick(attrObj);
+    //trigger call back to state change.
+    this.props.propPanel(attrObj);
   }
 
   componentDidMount() {
-    // set height in pixels after element is scaled to 100% of height, for adding scrollbar
+    // set height in pixels after element is
+    // scaled to 100% of height, for adding scrollbar
     var e = document.getElementById("prev");
     var h = e.clientHeight;
     e.style.height = h + "px";
@@ -44,45 +46,33 @@ class WebPreviewArea extends React.Component {
   drop_handler(e) {
     e.preventDefault();
     var data = e.dataTransfer.getData("attributes");
-    console.log("this is data " + data);
+    //console.log("this is data " + data);
     data = JSON.parse(data);
-
+    //creating react element.
+    console.log(this.props.elems);
     var ele = React.createElement(
       data.tag,
       {
         ...data,
         onClick: this.on_click,
-        onDragStart: this.drag_start,
-        id: this.key,
-        key: this.key++
+        onDragStart: this.drag_start
       },
       data.content
     );
-
+    //creating object for storing in state.
     var obj = {
       [this.state_key++]: {
         ...data,
-        tag: data.tag,
-        element: ele
+        tag: data.tag
       }
     };
+    this.elems.push(ele);
     this.props.change(obj);
   }
 
   dragover_handler(e) {
     e.preventDefault();
     e.dataTransfer.dropEffect = "move";
-  }
-  fetch() {
-    for (var first_ind in this.props.elems) {
-      for (var second_ind in this.props.elems[first_ind]) {
-        if (second_ind === "element") {
-          this.elems.push(this.props.elems[first_ind][second_ind]);
-        }
-      }
-    }
-
-    return this.elems;
   }
 
   render() {
@@ -93,7 +83,7 @@ class WebPreviewArea extends React.Component {
         onDrop={this.drop_handler}
         onDragOver={this.dragover_handler}
       >
-        {this.fetch()}
+        {this.elems}
       </div>
     );
   }

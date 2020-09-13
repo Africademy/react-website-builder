@@ -6,6 +6,11 @@ class PropsPanel extends React.Component {
   constructor(props) {
     super(props);
     this.variable = "this";
+    this.propertyChangeHandler = this.propertyChangeHandler.bind(this);
+  }
+  propertyChangeHandler(e) {
+    console.log("the state is ");
+    console.log(this.props.attr);
   }
   render() {
     var tag = this.props.attr.tag;
@@ -38,7 +43,13 @@ class PropsPanel extends React.Component {
       load.push(
         <Form.Group controlId={id}>
           <Form.Label>{get}</Form.Label>
-          <Form.Control as="select" size="sm" defaultValue={def} custom>
+          <Form.Control
+            as="select"
+            size="sm"
+            defaultValue={def}
+            onChange={this.propertyChangeHandler}
+            custom
+          >
             {options}
           </Form.Control>
         </Form.Group>

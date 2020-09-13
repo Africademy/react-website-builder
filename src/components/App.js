@@ -16,19 +16,18 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      attr: {}
+      attr: {},
+      props: {}
     };
-    this.handle_props_panel = this.handle_props_panel.bind(this);
-    this.handle_webArea = this.handle_webArea.bind(this);
-    this.elems = [];
+    this.handle_stateChange = this.handle_stateChange.bind(this);
+    this.handle_propPanel = this.handle_propPanel.bind(this);
   }
 
-  handle_props_panel(input) {
-    this.setState({ attr: input });
+  handle_propPanel(input) {
+    this.setState({ props: input });
   }
-  handle_webArea(input) {
+  handle_stateChange(input) {
     this.setState({ attr: input });
-    console.log("the recorded elements are " + this.elems);
   }
 
   render() {
@@ -51,13 +50,16 @@ class App extends React.Component {
                 </Col>
                 <Col md="7" className="web-prev-area">
                   <WebPreviewArea
-                    handleClick={this.handle_props_panel}
-                    change={this.handle_webArea}
+                    change={this.handle_stateChange}
                     elems={this.state.attr}
+                    propPanel={this.handle_propPanel}
                   />
                 </Col>
                 <Col md="3">
-                  <PropsPanel attr={this.state.attr} />
+                  <PropsPanel
+                    attr={this.state.props}
+                    change={this.handle_stateChange}
+                  />
                 </Col>
               </Row>
             </div>
