@@ -1,0 +1,64 @@
+{
+  "Navbar": {
+    "0": {
+      "ele": "Navbar",
+      "attributes": {
+        "bg": "light",
+        "expand": "lg"
+      },
+      "nested": [
+        1,
+        2,
+        3
+      ]
+    },
+    "1": {
+      "ele": "Navbar_Brand",
+      "attributes": {
+        "href": "#home",
+        "onClick": null
+      },
+      "nested": [],
+      "text": "REACT"
+    },
+    "2": {
+      "ele": "Navbar_Toggle",
+      "attributes": {
+        "aria-controls": "basic-navbar-nav",
+        "onClick": null
+      },
+      "nested": []
+    },
+    "3": {
+      "ele": "Navbar_Collapse",
+      "attributes": {
+        "id": "basic-navbar-nav"
+      },
+      "nested": [
+        4
+      ]
+    },
+    "4": {
+      "ele": "Nav",
+      "attributes": {
+        "className": "mr-auto"
+      },
+      "nested": [
+        5,
+        6
+      ]
+    },
+    "5": {
+      "ele": "Nav_Link",
+      "attributes": {},
+      "nested": [],
+      "text": "Home"
+    },
+    "6": {
+      "ele": "Nav_Link",
+      "attributes": {},
+      "nested": [],
+      "text": "Link"
+    }
+  }
+}
