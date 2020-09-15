@@ -59,6 +59,6 @@ to user requirements.
 ## Contributors
 
 ### Code Contributors
-<a href="https://github.com/yash11213018"><img src="https://avatars3.githubusercontent.com/u/52713940?s=400&u=322f3fae0a828e79deea96605abcb3b4ef095ae0&v=4?button=false" width="200px" height="200px" />
+<a href="https://github.com/yash11213018"><img src="https://avatars3.githubusercontent.com/u/52713940?s=400&u=322f3fae0a828e79deea96605abcb3b4ef095ae0&v=4?button=false" width="200px" height="100px" />
 </a>
-<a href="https://github.com/dhyey-shah"><img src="https://avatars0.githubusercontent.com/u/26005799?s=400&v=4?button=false" width="200px" height="200px" /></a>
+<a href="https://github.com/dhyey-shah"><img src="https://avatars0.githubusercontent.com/u/26005799?s=400&v=4?button=false" width="200px" height="100px" /></a>
