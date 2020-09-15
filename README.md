@@ -11,7 +11,27 @@
 - Localstorage sync
 
 
-## Getting started
+### Prerequisites
+* up and running node & NPM [node.js](https://nodejs.org/en/download/)
+* setting up react-enivronment [react-env](https://www.geeksforgeeks.org/reactjs-setting-development-environment/)
+* installing react-bootstrap [react-bootstrap](https://react-bootstrap.github.io/getting-started/introduction/)
+```
+npm install react-bootstrap bootstrap
+```
+* setting up browser-globals for rendering Bootstrap CSS-dependencies [dependencies](https://react-bootstrap.github.io/getting-started/introduction/)
+
+
+## Getting Started
+```
+git clone https://github.com/dhyey-shah/react-website-builder
+```
+
+
+## Built With
+
+* [react-js](https://reactjs.org/docs/getting-started.html) - javascript library
+* [react-bootstrap](https://react-bootstrap.github.io/getting-started/introduction/) - bootstrap components
+* Drag and Drop Functionality using event-handlers.
 
 ### Components panel
 
