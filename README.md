@@ -26,13 +26,6 @@ npm install react-bootstrap bootstrap
 git clone https://github.com/dhyey-shah/react-website-builder
 ```
 
-
-## Built With
-
-* [react-js](https://reactjs.org/docs/getting-started.html) - javascript library
-* [react-bootstrap](https://react-bootstrap.github.io/getting-started/introduction/) - bootstrap components
-* Drag and Drop Functionality using event-handlers.
-
 ### Components panel
 
 Drag any component from the left hand panel into this editor. Then start interacting with them.
@@ -56,6 +49,12 @@ to user requirements.
 - Code generation improvements
 - Dark mode support
 - Fix Bugs
+
+## Built With
+
+* [react-js](https://reactjs.org/docs/getting-started.html) - javascript library
+* [react-bootstrap](https://react-bootstrap.github.io/getting-started/introduction/) - bootstrap components
+* Drag and Drop Functionality using event-handlers.
 
 ## Contributors
 
